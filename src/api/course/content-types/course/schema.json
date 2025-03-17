@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "Course",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "instructor": {
+      "type": "string",
+      "required": true
+    },
+    "Price": {
+      "type": "biginteger",
+      "required": true,
+      "default": "999"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "courseStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Draft",
+        "Published",
+        "Archived",
+        "Unlisted"
+      ],
+      "default": "Draft"
+    },
+    "skill": {
+      "type": "text"
+    },
+    "outcomes": {
+      "type": "json"
+    },
+    "courses": {
+      "type": "json"
+    },
+    "about": {
+      "type": "text"
+    }
+  }
+}
