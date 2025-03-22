@@ -56,7 +56,7 @@
       "type": "json"
     },
     "about": {
-      "type": "text"
+      "type": "json"
     }
   }
 }

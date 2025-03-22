@@ -381,7 +381,7 @@ export interface ApiCourseCourse extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    about: Schema.Attribute.Text;
+    about: Schema.Attribute.JSON;
     courses: Schema.Attribute.JSON;
     courseStatus: Schema.Attribute.Enumeration<
       ['Draft', 'Published', 'Archived', 'Unlisted']
