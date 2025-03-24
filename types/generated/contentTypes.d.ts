@@ -399,11 +399,10 @@ export interface ApiCourseCourse extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     outcomes: Schema.Attribute.JSON;
-    Price: Schema.Attribute.BigInteger &
-      Schema.Attribute.Required &
-      Schema.Attribute.DefaultTo<'999'>;
+    Price: Schema.Attribute.JSON;
     publishedAt: Schema.Attribute.DateTime;
     skill: Schema.Attribute.Text;
+    test: Schema.Attribute.String;
     thumbnail: Schema.Attribute.Media<'images' | 'files'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;

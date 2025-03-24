@@ -22,11 +22,6 @@
       "type": "string",
       "required": true
     },
-    "Price": {
-      "type": "biginteger",
-      "required": true,
-      "default": "999"
-    },
     "thumbnail": {
       "type": "media",
       "multiple": false,
@@ -57,6 +52,12 @@
     },
     "about": {
       "type": "json"
+    },
+    "Price": {
+      "type": "json"
+    },
+    "test": {
+      "type": "string"
     }
   }
 }
