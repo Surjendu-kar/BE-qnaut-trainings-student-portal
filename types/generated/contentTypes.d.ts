@@ -402,6 +402,7 @@ export interface ApiCourseCourse extends Struct.CollectionTypeSchema {
     Price: Schema.Attribute.JSON;
     publishedAt: Schema.Attribute.DateTime;
     skill: Schema.Attribute.Text;
+    startDate: Schema.Attribute.Date;
     test: Schema.Attribute.String;
     thumbnail: Schema.Attribute.Media<'images' | 'files'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
