@@ -53,14 +53,11 @@
     "about": {
       "type": "json"
     },
-    "Price": {
-      "type": "json"
-    },
     "test": {
       "type": "string"
     },
-    "startDate": {
-      "type": "date"
+    "course_fee": {
+      "type": "biginteger"
     }
   }
 }

@@ -382,6 +382,7 @@ export interface ApiCourseCourse extends Struct.CollectionTypeSchema {
   };
   attributes: {
     about: Schema.Attribute.JSON;
+    course_fee: Schema.Attribute.BigInteger;
     courses: Schema.Attribute.JSON;
     courseStatus: Schema.Attribute.Enumeration<
       ['Draft', 'Published', 'Archived', 'Unlisted']
@@ -399,10 +400,8 @@ export interface ApiCourseCourse extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     outcomes: Schema.Attribute.JSON;
-    Price: Schema.Attribute.JSON;
     publishedAt: Schema.Attribute.DateTime;
     skill: Schema.Attribute.Text;
-    startDate: Schema.Attribute.Date;
     test: Schema.Attribute.String;
     thumbnail: Schema.Attribute.Media<'images' | 'files'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
