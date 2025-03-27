@@ -58,6 +58,9 @@
     },
     "course_fee": {
       "type": "biginteger"
+    },
+    "course_info": {
+      "type": "json"
     }
   }
 }

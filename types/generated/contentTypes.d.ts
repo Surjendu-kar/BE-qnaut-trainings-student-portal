@@ -383,6 +383,7 @@ export interface ApiCourseCourse extends Struct.CollectionTypeSchema {
   attributes: {
     about: Schema.Attribute.JSON;
     course_fee: Schema.Attribute.BigInteger;
+    course_info: Schema.Attribute.JSON;
     courses: Schema.Attribute.JSON;
     courseStatus: Schema.Attribute.Enumeration<
       ['Draft', 'Published', 'Archived', 'Unlisted']
